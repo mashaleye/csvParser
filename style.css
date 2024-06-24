@@ -1,0 +1,77 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Makes the body take up at least the full height of the viewport */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  main {
+    flex: 1; /*Makes the main content expand to fill available space, pushing the footer down*/
+  }
+  
+  .menu-link:hover {
+    text-decoration: underline;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  #menu-items {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+  }
+
+  #menu-items a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+      background: #f8f8f8;
+  }
+
+  #menu-items a:last-child {
+      border-bottom: 1px solid #ccc;
+  }
+}
+
+/* Button styling */
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333; 
+}
+
+#fileInput[type="file"] {
+  display: none;
+}
+
+#buttonFileInput {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
